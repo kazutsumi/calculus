@@ -1,0 +1,327 @@
+\documentclass[11pt, uplatex, dvipdfmx, twoside]{jsarticle}
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts, bm,fancyhdr, braket, setspace, emathEy, enumitem}
+\usepackage{plext}
+\newcommand{\ds}{\displaystyle}
+
+
+\pagestyle{plain}
+
+% \newcounter{ct}
+% \setcounter{ct}{1}
+% \newcommand{\no}{\arabic{ct}.\ \refstepcounter{ct}}
+
+% \fancyhead{}
+%\fancyhead[CE]{(A)}
+%\fancyhead[CO]{(B)}
+
+
+\title{\Huge 微分積分 問題集}
+
+\begin{document}
+
+
+\maketitle
+\thispagestyle{empty}
+
+\newpage
+
+
+
+\section{数列の極限}
+
+\begin{enumerate}[label=\arabic{section}.\arabic*]
+  
+  \setlength{\itemsep}{1zh}
+  
+\item 第 $n$ 項が次の式で表される数列の極限を求めよう．
+
+  \vspace{1zh}
+  
+  \begin{edaenumerate}<retusuu=3>[(1)]
+
+  \item $\ds \frac{\sin n}{n}$
+
+  \item $\ds \frac{1+\left(-1\right)^n}{n}$
+
+  \item $\ds 1+ \frac{1}{2} + \frac{1}{3}+\cdots + \frac{1}{n} $ 
+
+  \end{edaenumerate}
+
+\item 数列 $\{a_n\}$ が次の漸化式と初期条件を満たすとする．
+  \[
+    a_{n+1} = \frac{a_{n}}{2}+\frac{1}{a_{n}} ,\quad a_1=-2
+  \]
+  \begin{enumerate}[label=(\arabic*)]
+    \setlength{\itemsep}{1ex}
+  \item $\{a_n\}$ が狭義単調増加であることを確認しよう．
+
+  \item $\{a_n\}$ が上に有界であることを確認しよう．
+
+  \item $\{a_n\}$ の極限を求めよう．
+
+  \item $a_2^2\; , a_3^2\; , a_4^4$ を具体的に計算し，小数表示してみよう．
+  \end{enumerate}
+
+\item 次の漸化式と初期条件を満たす数列 $\{a_n\}$ の極限を求めよう．
+  \[
+    a_{n+1} = \frac{2a_{n}}{3} + \frac{1}{a_{n}^2}, \quad a_1 = 3
+  \]
+\end{enumerate}
+
+
+
+\section{関数の極限}
+
+
+\begin{enumerate}[label=\arabic{section}.\arabic*]
+
+  \setlength{\itemsep}{1zh}
+  
+\item 次の極限を求めよう．
+
+  \vspace{1ex}
+
+  \begin{edaenumerate}<retusuu=3>[(1)]
+
+  \item $\ds \lim_{x \to +0} \sqrt{x} \sin \frac{1}{x}$
+
+  \item $\ds \lim_{x \to \infty} \frac{\sin x}{x}$
+
+  \item $\ds \lim_{x \to \infty} \frac{x-\tan^{-1} x}{x}$
+    
+  \end{edaenumerate}
+
+\item 次の関数 $f$ が $x=0$ で連続となるような定数 $A$ の値を求めよう．
+
+  \vspace{1ex}
+
+  \begin{edaenumerate}[(1)]
+    
+  \item $\ds f(x)=\left\{
+      \begin{array}{cc}
+        2x+3& (x > 0)\\
+        -3x+A & (x \leqq 0)
+      \end{array}
+    \right.$
+
+  \item $\ds f(x)=\left\{
+      \begin{array}{cc}
+        e^{-x} & (x >0)\\
+        \cos^{-1}x +A & (x \leqq 0)
+      \end{array}
+    \right.$
+
+  \item $\ds f(x) = \left\{
+      \begin{array}{cc}
+        \tan^{-1}\left(x-\frac{1}{2}\right) & (x > 0)\\
+        \sin^{-1} A & (x \leqq 0)
+      \end{array}
+    \right.$
+    
+  \item $\ds f(x) = \left\{
+      \begin{array}{cc}
+        \dfrac{\sin 3x}{2x} & (x > 0)\\
+        x^2+A & (x \leqq 0)
+      \end{array}
+    \right.$
+
+  \item $\ds f(x) = \left\{
+      \begin{array}{cc}
+        e^{-\frac{1}{x}} & (x >0)\\
+        A & (x \leqq 0)
+      \end{array}
+    \right.$
+    
+  \item $\ds f(x) = \left\{
+      \begin{array}{cc}
+        e^{-\frac{1}{x^2}}& (x \neq 0)\\
+        A & (x=0)
+      \end{array}
+    \right.$
+  \end{edaenumerate}
+  
+  
+\end{enumerate}
+
+\newpage
+
+\section{導関数}
+
+\begin{enumerate}[label=\arabic{section}.\arabic*]
+
+  \setlength{\itemsep}{1zh}
+  
+\item 次の関数 $f$ が $x=0$ で微分可能か否かを判定し，微分可能な
+  ら $f'(0)$ の値を求めよう．
+
+  \vspace{1ex}
+  
+  \begin{edaenumerate}[(1)]
+  \item $\ds f(x) = \left\{
+      \begin{array}{cc}
+        x \log |x| & (x \neq 0)\\
+        0 & (x =0)
+      \end{array}
+    \right.$
+
+  \item $\ds f(x) = \left\{
+      \begin{array}{cc}
+        \dfrac{1-\cos x}{x} & (x \neq 0)\\
+        0 & (x=0)
+      \end{array}
+    \right.$
+
+  \item $\ds f(x) = \left\{
+      \begin{array}{cc}
+        x^2 \sin \dfrac{1}{x} & (x \neq 0)\\
+        0 & (x=0)
+      \end{array}
+    \right.$
+
+  \item $\ds f(x) = \left\{
+      \begin{array}{cc}
+        \sqrt{|x|} \sin \dfrac{1}{x} & (x \neq 0)\\
+        0 & (x =0 )
+      \end{array}
+    \right.$
+  \end{edaenumerate}
+
+\item 次の関数 $f$ が開区間 $(-1,1)$ で $C^2$ 級となるような定数 $A, B, C$ の値を求めよう．
+  \[
+    f(x) = \left\{
+      \begin{array}{cc}
+        \cos x & (x > 0) \\
+        Ax^2+Bx+C & (x \leqq 0)
+      \end{array}
+    \right.
+  \]
+
+\item $f(x)=\sin x$ とする．$3$ 次関数 $g(x) =a_3 x^3+a_2x^2 + a_1 x + a_0$ が
+  \[
+    f(0) = g(0), \quad f'(0) = g'(0), \quad f''(0) = g''(0), \quad f^{(3)}(0) = g^{(3)}(0)
+  \]
+  を満たすとき，$g(x)$ の係数 $a_0, a_1, a_2, a_3$ の値を求めよう．
+\end{enumerate}
+
+
+
+\section{ 不定形の極限}
+
+\begin{enumerate}[label=\arabic{section}.\arabic*]
+  
+\item 次の関数の極限を求めよう．
+
+\item 次の関数 $f$ が $x=0$ で微分可能か否かを判定しよう．微分可能なら微分
+  係数 $f'(0)$ の値も求めよう．
+  
+  \vspace{1ex}
+  
+  \begin{enumerate}[label=(\arabic*)]
+  \item $\ds f(x) = \left\{
+      \begin{array}{cc}
+        \dfrac{\sin x}{x} & (x \neq 0)\\
+        1 & (x =0)
+      \end{array}
+    \right.$
+  \end{enumerate}
+
+\end{enumerate}
+
+
+\newpage
+
+\section{ テイラーの定理}
+
+\begin{enumerate}[label=\arabic{section}.\arabic*]
+\item 
+\end{enumerate}
+
+
+
+\section{ 多変数関数の極限}
+
+\begin{enumerate}[label=\arabic{section}.\arabic*]
+\item 
+\end{enumerate}
+
+
+
+\section{ 偏導関数}
+
+\begin{enumerate}[label=\arabic{section}.\arabic*]
+\item 
+\end{enumerate}
+
+
+
+\section{ 多変数関数の極値問題}
+
+
+
+\section{ 積分の計算}
+
+\begin{enumerate}[label=\arabic{section}.\arabic*]
+\item 
+\end{enumerate}
+
+
+
+\section{ 広義積分}
+
+\begin{enumerate}[label=\arabic{section}.\arabic*]
+\item 
+\end{enumerate}
+
+
+
+
+\section{ 曲線の長さ，面積}
+
+\begin{enumerate}[label=\arabic{section}.\arabic*]
+\item 
+\end{enumerate}
+
+
+
+\section{ 二重積分の計算1}
+
+\begin{enumerate}[label=\arabic{section}.\arabic*]
+\item 
+\end{enumerate}
+
+
+
+\section{ 二重積分の計算2}
+
+\begin{enumerate}[label=\arabic{section}.\arabic*]
+\item 
+\end{enumerate}
+
+
+
+
+\section{ 2変数関数の広義積分}
+
+\begin{enumerate}[label=\arabic{section}.\arabic*]
+\item 
+\end{enumerate}
+
+
+
+\section{ 三重積分}
+
+\begin{enumerate}[label=\arabic{section}.\arabic*]
+\item 
+\end{enumerate}
+
+
+
+
+\section{ 曲面積，面積分}
+
+\begin{enumerate}[label=\arabic{section}.\arabic*]
+\item 
+\end{enumerate}
+
+\end{document}
