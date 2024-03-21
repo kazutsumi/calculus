@@ -21,7 +21,7 @@
 
 
 
-\section{数列の極限}
+\section{数列の極限}\label{sec:sequence}
 
 \begin{enumerate}[label=\arabic{section}.\arabic*]
   
@@ -64,7 +64,7 @@
 
 
 
-\section{関数の極限}
+\section{関数の極限}\label{sec:limit}
 
 
 \begin{enumerate}[label=\arabic{section}.\arabic*]
@@ -139,7 +139,7 @@
 
 \newpage
 
-\section{導関数}
+\section{導関数}\label{sec:derivative}
 
 \begin{enumerate}[label=\arabic{section}.\arabic*]
 
@@ -209,7 +209,7 @@
 
 
 
-\section{ 不定形の極限}
+\section{ 不定形の極限}\label{sec:hospital}
 
 \begin{enumerate}[label=\arabic{section}.\arabic*]
 
@@ -277,7 +277,7 @@
 
 \newpage
 
-\section{ テイラーの定理}
+\section{ テイラーの定理}\label{sec:taylor}
 
 \begin{enumerate}[label=\arabic{section}.\arabic*]
 
@@ -331,8 +331,47 @@
   \item $\sqrt[5]{0.8}$
     
   \end{edaenumerate}
+
+\item 以下の条件を満たす関数 $f$ に対し，$f(1)$ の値の小数点以下第 $4$
+  位までを確定させよう．
+  \[
+    f'(x) = e^{-x^2}, \quad f(0)=0
+  \]
+
+\item 以下の条件を満たす関数 $f$ に対し，$f$ の $5$ 次マクローリン多項式
+  \[
+    P(x) = f(0) + f'(0)x + \frac{f''(0)}{2!}x^2 +
+    \frac{f^{(3)}(0)}{3!}x^3 + \frac{f^{(4)}(0)}{4!}x^4 + \frac{f^{(5)}(0)}{5!}x^5
+  \]
+  を求めよう．また，指定された $a$ に対して $P(a)$ の値を求めよう．
   
+  \vspace{1ex}
+
+  \begin{enumerate}[label=(\arabic*)]
+
+    \setlength{\itemsep}{1ex}
+    
+  \item $f'(x) = f(x), \quad f(0) =1$ \quad $\ds (a=1/2)$
+
+  \item $\ds 2f''(x) +5'f(x) -3 f(x)=0, \quad f(0)=1, \; f'(0)= 1/2$ \quad $(a=1)$
+
+  \item $\ds f(x) + \log\left( f'(x)\right) =0, \; f(0)=0$ \quad $(a=0.2)$
+    
+  \end{enumerate}
+
+\item 関数 $f$ が以下の条件を満たすとする．
+  \[
+    f''(x) = -f(x), \quad f(\pi)=0, \; f'(\pi) = -1
+  \]
+  このとき，$f$ の $x=\pi$ の周りの $4$ 次テイラー多項式
+  \[
+    P(x) = f(\pi) + f'(\pi) (x-\pi) + \frac{f''(\pi)}{2!}(x-\pi)^2 + \frac{f^{(3)}(\pi)}{3!}(x-\pi)^3
+    + \frac{f^{(4)}(\pi)}{4!}(x-\pi)^4
+  \]
+  と $P(3)$ の値を求めよう．
+    
 \end{enumerate}
+
 
 
 
