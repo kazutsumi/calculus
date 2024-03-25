@@ -577,32 +577,29 @@
 \begin{enumerate}[label=\ref{sec:hospital}.\arabic*]
   \setlength{\itemsep}{1ex}
   
-\item
+\item $(\ast)$ の箇所でロピタルの定理を用いている．
   \begin{enumerate}[label=(\arabic*)]
     \setlength{\itemsep}{1ex}
     
   \item
     $A = f(0) = \dlim_{x \to +0} f(x) = \dlim_{x \to +0} x \log x =
-    \dlim_{x \to +0} \frac{\log x}{\frac{1}{x}} = \dlim_{x \to +0}
-    \frac{\frac{1}{x}}{-\frac{1}{x^2}} = \dlim_{x \to +0} (-x) =0$
+    \dlim_{x \to +0} \frac{\log x}{\frac{1}{x}} \overset{(\ast)}{=} 0$
 
   \item
     $A = f(0) = \dlim_{x \to +0} f(x) = \dlim_{x \to +0} x^x =
-    \dlim_{x \to +0} e^{x \log x} = e^0 = 1$
+    \dlim_{x \to +0} e^{x \log x} = e^{\dlim_{x \to +0} x \log x} \overset{(\ast)}{=} e^0=1$ 
 
   \item
     $A= f(0) = \dlim_{x \to 0}f(x) = \dlim_{x \to 0} \frac{x-\sin
-      x}{x^3} = \dlim_{x \to 0}\frac{1-\cos x}{3x^2}=\dlim_{x \to 0}\frac{\sin x}{6x} =\frac{1}{6}$
+      x}{x^3} \overset{(\ast)}{=}\frac{1}{6}$
 
   \item
     $A=f(0) = \dlim_{x \to 0} f(x) = \dlim_{x \to 0} \frac{(1-\cos
-      x)\sin x}{x-\sin x}=\dlim_{x \to 0} \frac{\cos x - \cos^2 x +
-      \sin^2x}{1-\cos x} = \dlim_{x \to 0} \frac{-\sin x + 4 \sin x
-      \cos x}{\sin x} = \dlim_{x \to 0} \frac{-\cos x + 4\cos^2 x - 4\sin^2 x}{\cos x} = 3$
+      x)\sin x}{x-\sin x} \overset{(\ast)}{=} 3$
     
   \end{enumerate}
 
-\item
+\item $(\ast)$ の箇所でロピタルの定理を用いている．
   \begin{enumerate}[label=(\arabic*)]
     \setlength{\itemsep}{1ex}
     
@@ -610,22 +607,17 @@
     $B=f(0) = \dlim_{x \to +0} f(x) = \dlim_{x \to +0}\frac{\sin x}{x}
     = 1$ である．$f$ は $x=0$ で微分可能なので
     $\dlim_{x \to +0} \frac{f(x)-f(0)}{x} = \dlim_{x \to +0}
-    \frac{\sin x - x}{x^2} = \dlim_{x \to +0} \frac{\cos x-1}{2x} =
-    \dlim_{x \to +0} \frac{-\sin x}{2} = 0$ と $\dlim_{x \to -0}
+    \frac{\sin x - x}{x^2} \overset{(\ast)}{=}  0$ と $\dlim_{x \to -0}
     \frac{f(x)-f(0)}{x} = \dlim_{x \to -0} A = A$ が一致するから $A=0$.
     
-  \item $f$ は $x=0$ で連続なので
-    $B=f(0) = \dlim_{x \to +0} f(x) = \dlim_{x \to +0}
-    \frac{x-\tan^{-1}x}{x^2} = \dlim_{x \to +0}
-    \frac{1-(1+x^2)^{-1}}{2x} = \dlim_{x \to +0}
-    \frac{-2x(1+x^2)^{-2}}{2}=0$ である．$f$ は $x=0$ で微分可能なの
-    で
-    $\dlim_{x \to +0}\frac{f(x)-f(0)}{x} = \dlim_{x \to +0}
-    \frac{x-\tan^{-1}x}{x^3} = \dlim_{x \to +0}
-    \frac{1-(1+x^2)^{-1}}{3x^2}= \dlim_{x \to
-      +0}\frac{1}{3(x^2+1)}=\frac{1}{3}$ と
-    $\dlim_{x \to -0} \frac{f(x)-f(0)}{x} = \dlim_{x \to -0} A=A$ が一
-    致するから $A=\frac{1}{3}$.
+  \item $f$ は $x=0$
+    で連続なので$B=f(0) = \dlim_{x \to +0} f(x) = \dlim_{x \to +0}
+    \frac{x-\tan^{-1}x}{x^2} \overset{(\ast)}{=} 0$ であ
+    る．$f$ は $x=0$
+    で微分可能なので$\dlim_{x \to +0}\frac{f(x)-f(0)}{x} = \dlim_{x
+      \to +0} \frac{x-\tan^{-1}x}{x^3} \overset{(\ast)}{=} \frac{1}{3}$
+    と$\dlim_{x \to -0} \frac{f(x)-f(0)}{x} = \dlim_{x \to -0} A=A$ が
+    一致するから $A=\frac{1}{3}$.
     
   \end{enumerate}
 \end{enumerate}
