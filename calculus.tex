@@ -366,6 +366,79 @@
     
 \end{enumerate}
 
+\newpage
+
+\section{偏微分}\label{sec:partial}
+
+\begin{enumerate}[label=\arabic{section}.\arabic*]
+
+  \setlength{\itemsep}{1zh}
+  
+\item $f(x,y) = -2x^3-y^2+x^2y+1$ とし，$\ds P=(4,3)$ とする．
+
+  \vspace{1ex}
+
+  \begin{enumerate}[label=(\arabic*)]
+    \setlength{\itemsep}{1ex}
+    
+  \item $P$ における $f$ の勾配 $\nabla f(P)$ を求めよう．
+
+  \item $P$ での $\bm{n} = (n_1, n_2)$ 方向の方向微分
+    $\ds \frac{\partial f}{\partial \bm{n}}(P) = \lim_{h \to 0}
+    \frac{f(P+h\bm{n}) - f(P)}{h}$ を求めよう．
+
+  \item 平面の単位ベクトル $\bm{n}$ の中で，方向微分
+    $\ds \frac{\partial f}{\partial \bm{n}}(P)$ が最大となるものを求めよう．
+  \end{enumerate}
+
+\item $f(x,y) = 2x^2+3y^2-1$ とし，$P_0=(3,4)$ とする．
+
+  \vspace{1ex}
+  
+  \begin{enumerate}[label=(\arabic*)]
+    \setlength{\itemsep}{1ex}
+    
+  \item $f$ の勾配 $\nabla f(x,y)$ を求めよう．
+
+  \item $f(P_0 - \alpha \nabla f(P_0))$ を最小にす
+    る $\alpha$ を $\alpha_0$ とする．$\alpha_0$ を求めよう．
+
+  \item 内積
+    $\nabla f\left(X_0 - \alpha \nabla f(P_0)\right) \cdot \nabla
+    f(P_0)$ が $0$ となる $\alpha$ を求めよう．
+
+  \item $P_1 = P_0  - \alpha_0 \nabla f(P_0)$ とする．$f(P_1)$ を求めよう．
+
+  \item 上記を繰り返す．つまり，$f(P_k - \alpha \nabla f(P_k))$ を最小
+    にする $\alpha$ を $\alpha_k$
+    とし，
+    \[
+      P_{k+1} = P_{k} - \alpha_k \nabla f(P_k) \quad (k=0,1,2,\ldots)
+    \]
+    とする．$f(P_1), f(P_2), f(P_3), \ldots $ が $f$ の最小値 $-1$ に近
+    づいていることを確認しよう．このようにして関数の最小値（極小値）を
+    探す方法は最急降下法と呼ばれる．
+  \end{enumerate}
+
+\item 平面曲線
+  $ 10 x^{3}-3 x^{2} y -26 x \,y^{2}-14 y^{3}-51 x^{2}-134 x y -78
+  y^{2}-110 x -117 y -53=0$ 上の点 $(0,-1)$ における接線の方程式を求め
+  よう．
+  
+\end{enumerate}
+
+% \section{2変数関数の極値}\label{sec:extremal}
+
+% \begin{enumerate}[label=\arabic{section}.\arabic*]
+
+%   \setlength{\itemsep}{1zh}
+% \item
+
+% \item
+
+% \item
+  
+% \end{enumerate}
 
 \newpage
 
@@ -780,6 +853,40 @@
   $f''(\pi) = -f(\pi)=0, \, f^{(3)}(\pi)=-f'(\pi)=1, \, f^{(4)}(\pi)=
   -f''(\pi)=0$ より $P(x) = -(x-\pi) + \frac{(x-\pi)^3}{6}, P(3) = 0.141\cdots$.
   
+\end{enumerate}
+
+\newpage
+
+\begin{enumerate}[label=\ref{sec:partial}.\arabic*]
+  \setlength{\itemsep}{1ex}
+  
+\item
+  \begin{enumerate}[label=(\arabic*)]
+    \setlength{\itemsep}{1ex}
+    
+  \item $\nabla f(x,y) = \left( -6x^2+2xy, x^2-2y\right)$ より
+    $\nabla f(P) = \nabla f(4,3))=(-72,10)$.
+
+  \item
+    $\frac{\partial f}{\partial \bm{n}}(P)= \dlim_{h \to
+      0}\frac{-2(n_1 h + 4)^3 - (n_2 h+3)^3 +
+      (n_1h+4)^2(n_2h+3)+89}{h} = -72 n_1 + 10 n_2$.
+
+    
+  \item (2) より
+    $\frac{\partial f}{\partial \bm{n}}(P) = \nabla f(P) \cdot \bm{n}$
+    なので，$\nabla f(P)$ と $\bm{n}$ のなす角を $\theta$ とすれ
+    ば，$\frac{\partial f}{\partial \bm{n}} = |\nabla f(P)| |\bm{n}|
+    \cos \theta = |\nabla f(P)| \cos \theta$ である．よって，$\cos
+    \theta=1$ のとき，つまり $\bm{n} = \frac{\nabla f(P)}{ |\nabla f(P)|} =
+    \frac{1}{\sqrt{1321}}(-36,5)$ のとき
+    $\frac{\partial f}{\partial \bm{n}}(P)$ は最大．
+  \end{enumerate}
+
+% \item
+
+% \item
+
 \end{enumerate}
 
 \end{document}
