@@ -404,7 +404,7 @@
     る $\alpha$ を $\alpha_0$ とする．$\alpha_0$ を求めよう．
 
   \item 内積
-    $\nabla f\left(X_0 - \alpha \nabla f(P_0)\right) \cdot \nabla
+    $\nabla f\left(P_0 - \alpha \nabla f(P_0)\right) \cdot \nabla
     f(P_0)$ が $0$ となる $\alpha$ を求めよう．
 
   \item $P_1 = P_0  - \alpha_0 \nabla f(P_0)$ とする．$f(P_1)$ を求めよう．
@@ -855,7 +855,6 @@
   
 \end{enumerate}
 
-\newpage
 
 \begin{enumerate}[label=\ref{sec:partial}.\arabic*]
   \setlength{\itemsep}{1ex}
@@ -869,21 +868,42 @@
 
   \item
     $\frac{\partial f}{\partial \bm{n}}(P)= \dlim_{h \to
-      0}\frac{-2(n_1 h + 4)^3 - (n_2 h+3)^3 +
+      0}\frac{-2(n_1 h + 4)^3 - (n_2 h+3)^2 +
       (n_1h+4)^2(n_2h+3)+89}{h} = -72 n_1 + 10 n_2$.
 
     
   \item (2) より
     $\frac{\partial f}{\partial \bm{n}}(P) = \nabla f(P) \cdot \bm{n}$
-    なので，$\nabla f(P)$ と $\bm{n}$ のなす角を $\theta$ とすれ
-    ば，$\frac{\partial f}{\partial \bm{n}} = |\nabla f(P)| |\bm{n}|
-    \cos \theta = |\nabla f(P)| \cos \theta$ である．よって，$\cos
-    \theta=1$ のとき，つまり $\bm{n} = \frac{\nabla f(P)}{ |\nabla f(P)|} =
-    \frac{1}{\sqrt{1321}}(-36,5)$ のとき
-    $\frac{\partial f}{\partial \bm{n}}(P)$ は最大．
+    なので，$\bm{n} = \frac{\nabla f(P)}{ |\nabla f(P)|} =
+    \frac{1}{\sqrt{1321}}(-36,5)$ のとき最大．
   \end{enumerate}
 
-% \item
+\newpage
+  
+ \item
+   \begin{enumerate}[label=(\arabic*)]
+     \setlength{\itemsep}{1ex}
+     
+   \item $\nabla f(x,y) = (4x, 6y)$
+
+   \item
+     $f(P_0 - \alpha \nabla f(P_0))=f(3-12\alpha, 4-24\alpha) =
+     2016\alpha^2-720\alpha+65$
+     なので，$\frac{d}{d\alpha} f(P_0 - \alpha \nabla f(P_0)) =
+     4032\alpha-720=0$ を解いて $\alpha_0=\frac{5}{28}$.
+
+   \item
+     $\nabla f(3-12\alpha, 4-24\alpha) \cdot \nabla f(3,4) =
+     -(4032\alpha-720) =0$ を解いて $\alpha = \alpha_0=\frac{5}{28}$.
+
+   \item $f(P_1) = f\left(\frac{6}{7}, -\frac{2}{7} \right) = \frac{5}{7}$.
+
+   \item
+     $ f(P_1) = \frac{5}{7}=0.7142\cdots , \;  f(P_2) = f\left( \frac{6}{77}, \frac{8}{77}\right) =
+     -\frac{515}{539}=-0.955\cdots, \; f(P_3) = f\left(\frac{12}{539},
+       -\frac{4}{539}\right) = -\frac{41455}{41503} = -0.998\cdots$ と
+     確かに $-1$ に近づいている．
+   \end{enumerate}
 
 % \item
 
