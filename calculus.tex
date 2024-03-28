@@ -398,22 +398,21 @@
   \begin{enumerate}[label=(\arabic*)]
     \setlength{\itemsep}{1ex}
     
-  \item $f$ の勾配 $\nabla f(x,y)$ を求めよう．
+  \item 平面ベクトル $\bm{d}_0=-\nabla f(P_0)$ を求めよう．
 
-  \item $f(P_0 - \alpha \nabla f(P_0))$ を最小にす
+  \item $f(P_0 + \alpha \bm{d}_0)$ を最小にす
     る $\alpha$ を $\alpha_0$ とする．$\alpha_0$ を求めよう．
 
-  \item 内積
-    $\nabla f\left(P_0 - \alpha \nabla f(P_0)\right) \cdot \nabla
-    f(P_0)$ が $0$ となる $\alpha$ を求めよう．
+  \item 内積$\nabla f\left(P_0 + \alpha \bm{d}_0 \right) \cdot
+    \bm{d}_0$ が $0$ となる $\alpha$ を求めよう．
 
-  \item $P_1 = P_0  - \alpha_0 \nabla f(P_0)$ とする．$f(P_1)$ を求めよう．
+  \item $P_1 = P_0  + \alpha_0 \bm{d}_0$ とする．$f(P_1)$ を求めよう．
 
-  \item 上記を繰り返す．つまり，$f(P_k - \alpha \nabla f(P_k))$ を最小
+  \item 上記を繰り返す．つまり，$f(P_k + \alpha~ \bm{d}_k)$ を最小
     にする $\alpha$ を $\alpha_k$
     とし，
     \[
-      P_{k+1} = P_{k} - \alpha_k \nabla f(P_k) \quad (k=0,1,2,\ldots)
+      P_{k+1} = P_{k} + \alpha_k \bm{d}_k, \quad \bm{d}_k = -\nabla f(P_k) \quad (k=0,1,2,\ldots)
     \]
     とする．$f(P_1), f(P_2), f(P_3), \ldots $ が $f$ の最小値 $-1$ に近
     づいていることを確認しよう．このようにして関数の最小値（極小値）を
@@ -884,17 +883,17 @@
    \begin{enumerate}[label=(\arabic*)]
      \setlength{\itemsep}{1ex}
      
-   \item $\nabla f(x,y) = (4x, 6y)$
+   \item $\nabla f(x,y) = (4x, 6y)$ より $\bm{d}_0 = -\nabla f(3,4) = (-12, -24)$.
 
    \item
-     $f(P_0 - \alpha \nabla f(P_0))=f(3-12\alpha, 4-24\alpha) =
+     $f(P_0 + \alpha \bm{d}_0 )=f(3-12\alpha, 4-24\alpha) =
      2016\alpha^2-720\alpha+65$
-     なので，$\frac{d}{d\alpha} f(P_0 - \alpha \nabla f(P_0)) =
+     なので，$\frac{d}{d\alpha} f(P_0 + \alpha \bm{d}_0) =
      4032\alpha-720=0$ を解いて $\alpha_0=\frac{5}{28}$.
 
    \item
-     $\nabla f(3-12\alpha, 4-24\alpha) \cdot \nabla f(3,4) =
-     -(4032\alpha-720) =0$ を解いて $\alpha = \alpha_0=\frac{5}{28}$.
+     $\nabla f(3-12\alpha, 4-24\alpha) \cdot (-12,-24) =
+     4032\alpha-720 =0$ を解いて $\alpha = \alpha_0=\frac{5}{28}$.
 
    \item $f(P_1) = f\left(\frac{6}{7}, -\frac{2}{7} \right) = \frac{5}{7}$.
 
