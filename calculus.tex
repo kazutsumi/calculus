@@ -408,7 +408,7 @@
 
   \item $P_1 = P_0  + \alpha_0 \bm{d}_0$ とする．$f(P_1)$ を求めよう．
 
-  \item 上記を繰り返す．つまり，$f(P_k + \alpha~ \bm{d}_k)$ を最小
+  \item 上記を繰り返す．つまり，$f(P_k + \alpha \bm{d}_k)$ を最小
     にする $\alpha$ を $\alpha_k$
     とし，
     \[
@@ -426,18 +426,32 @@
   
 \end{enumerate}
 
-% \section{2変数関数の極値}\label{sec:extremal}
+\section{2変数関数の極値}\label{sec:extremal}
 
-% \begin{enumerate}[label=\arabic{section}.\arabic*]
+\begin{enumerate}[label=\arabic{section}.\arabic*]
 
-%   \setlength{\itemsep}{1zh}
-% \item
-
-% \item
-
-% \item
+  \setlength{\itemsep}{1zh}
   
-% \end{enumerate}
+\item 次の関数 $f$ の極値とそれを実現する点を全て求めよう．
+
+  \begin{edaenumerate}[(1)]
+  \item $\ds f(x,y) = (x-y)^2+y^3$
+
+  \item $f(x,y) = -x^4-x^2-2xy-y^2$
+  \end{edaenumerate}
+  
+\item 有界閉領域$D=\Set{(x,y) | x^2-y^2 \leqq 1, -1 \leqq y \leqq 1 }$
+  における関数 $f(x,y) = x^2-y^3$ の最大値と最小値及びそれらを実現する
+  点を全て求めよう．
+
+\item 関数 $\ds f(x,y) = \left\{
+    \begin{array}{cc}
+      \dfrac{x^4 y^2}{x^8+y^4} & (x,y) \neq (0,0)\\
+       0 & (x,y)=(0,0)
+    \end{array}
+    \right.$ の最大値と最小値を求めよう．
+  
+\end{enumerate}
 
 \newpage
 
@@ -913,7 +927,54 @@
    を整理して $f_x(0,-1)(x-0) + f_y(0,-1)(y+1) =0$ より接線の方程式
    は $-2x-3y-3=0$.
 
+ \end{enumerate}
 
-\end{enumerate}
+ \begin{enumerate}[label=\ref{sec:extremal}.\arabic*]
+   \setlength{\itemsep}{1ex}
+   
+ \item
+   \begin{enumerate}[label=(\arabic*)]
+     \setlength{\itemsep}{1ex}
+     
+   \item $f$ の停留点は $(0,0)$ のみで，$(0,0)$ におけるヘシア
+     ン $H(x,y) = f_{xx} f_{yy} - f_{xy}^2=12y$ の値は $0$ なので，ヘシアン
+     による極値判定法は役に立たない．$f(t,t) = t^3$ より，$t>0$ に対し
+     て $f(-t,-t)<0 = f(0,0) < f(t,t)$ なので，$(0,0)$ のどんな近傍で
+     も $f(0,0)$ は最大にも最小にもならない．つまり，$f(0,0)$ は極値で
+     はないので，$f$ は極値を持たない．
+
+   \item $f$ の停留点は $(0,0)$ のみで，$(0,0)$ におけるヘシア
+     ン $H(x,y) = f_{xx} f_{yy} - f_{xy}^2=24x^2$ の値は $0$ なので，ヘ
+     シアンによる極値判定法は役に立たない．一方で，$f(x,y) = -x^4 -
+     (x+y)^2 \leqq 0$ なので明らかに $f$ は $(0,0)$ で極大値 $0$ をとる．
+   \end{enumerate}
+
+ \item $D$ の内部での停留点と境界上で極値をとる点における値を比べ
+   る．$f$ の停留点は $(0,0)$ のみでこれは $D$ の内部にあ
+   り，$f(0,0)=0$ である．$D$ は双曲線 $C :x^2-y^2=1$ と$2$ 直線 $L_1
+   : y=1$ と $L_2: y=-1$ で囲まれる閉領域である．ラグランジュの未定乗数
+   法から，$f$ は $C$ 上では $4$ 点
+   $(x, y) =(\pm 1, 0), \left(\pm \frac{\sqrt{13}}{3},
+     \frac{2}{3}\right) \in D$
+   で極値をとり，$f(\pm 1, 0) =1, \; f\left(\pm \frac{\sqrt{13}}{3},
+     \frac{2}{3}\right) = \frac{31}{27}$
+   である．また，$f(x, \pm 1) = x^2 \mp 1$ なので，$2$ 直線 $L_1, L_2$
+   上ではそれぞれ $(0,1), (0,-1)$ で極値をとり，$f(0,\pm 1) = \mp 1$ で
+   ある．さらに，$C, L_1$ の交点 $(\pm \sqrt{2}, 1)$ での値は
+   $f(\pm \sqrt{2}, 1) = 1$ で， $C, L_2$ の交点 $(\pm \sqrt{2}, -1)$
+   での値は $f(\pm \sqrt{2}, -1) =3$ である．以上か
+   ら，$f$ は $(0,1)$ で最小値 $-1$ をとり，$(\pm \sqrt{2}, -1)$ で最大
+   値 $3$ をとる．
+
+ \item 明らかに $f(x,y) \geqq 0$ かつ $f(x,0)=f(y,0)=0$ なので $f$ の最
+   小値は $0$ である．また，$f$ の停留点は $t \neq 0$ によって
+   $(0,t), (t,0), (t,\pm t^2)$ と書ける点全てである．特に，
+   $f(t, \pm t^2) = \frac{1}{2} \; (t \neq 0) $ が $f$ の最大値の候補で
+   ある．ここで，$k >\frac{1}{2}$
+   のとき，$k - f(x,y) = \frac{kx^8-x^4y^2+ky^4}{x^8+y^4} =
+   \frac{k(x^4-y^2)^2+(2k-1)x^4y^2}{x^8+y^4} >0$ なので $f(x,y) = k$ を
+   満たす $(x,y)$ は存在しない．よって，$f(x,y) \leqq \frac{1}{2}$ なの
+   で $\frac{1}{2}$ は $f$ の最大値である．
+ \end{enumerate}
 
 \end{document}
