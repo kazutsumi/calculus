@@ -4,6 +4,6 @@
 
 まだまだ作成途中です．
 
-TeX内で [enumitem](https://www.ctan.org/pkg/enumitem) と [emathEy](http://emath.s40.xrea.com/) を使用しています．
+TeX内で [emathEy](http://emath.s40.xrea.com/) を使用しています．
 
 [線形代数板](https://github.com/kazutsumi/linearalgebra) も作成中です．
